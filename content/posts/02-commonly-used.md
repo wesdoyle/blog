@@ -4,7 +4,7 @@ description: "Quick reference for useful commands"
 date: 2019-11-28
 ---
 
-### `scp`
+### scp
 
 ```bash
 scp local_file.txt -i path_to_secret.pem remote_username@10.10.0.2:/remote/directory
@@ -39,10 +39,10 @@ Host foo
   Hostname [public ipv4]
   User [user]
   IdentityFile [path_to_secret.pem]
-  
+
 $ ssh -NfL 9999:localhost:8888 foo
 ```
-  
+
 ### psql
 
 ```bash
