@@ -23,6 +23,19 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/reading/**/*.md',
+        typeName: 'Reading',
+        route: '/reading/:slug',
+        remark: {
+          plugins: [
+            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
+          ]
+        }
+      }
+    },
+    {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000, // default
