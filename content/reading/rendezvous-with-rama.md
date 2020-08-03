@@ -2,6 +2,7 @@
 title: "Rendezvous with Rama"
 author: "Arthur C. Clarke"
 tags: "science fiction"
+slug: "rama"
 date: 2020-01-19
 ---
 

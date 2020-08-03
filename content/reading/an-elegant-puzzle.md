@@ -1,5 +1,6 @@
 ---
 title: "An Elegant Puzzle: Systems of Engineering Management"
+slug: "elegant-puzzle"
 author: "Will Larson"
 tags: "leadership, engineering"
 date: 2019-08-19

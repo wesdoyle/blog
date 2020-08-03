@@ -1,7 +1,8 @@
 ---
 title: "A Handbook for New Stoics"
+slug: "handbook-stoics"
 author: "Pigliucci, Lopez"
-tags: "philosophy, psycholog~~~~y"
+tags: "philosophy, psychology"
 date: 2019-08-19
 ---
 

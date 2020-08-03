@@ -1,6 +1,7 @@
 ---
 title: "Ancient Civilizations of North America (The Great Courses audio recordings)"
 author: "Edwin Barnhart"
+slug: "ancient-civ-north-america"
 tags: "ancient history, north america"
 date: 2020-01-01
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Soul of the White Ant"
-author: "James C. Klagge",
+author: "Eugène Marais"
 tags: "biology, emergent phenomena"
+slug: "soul-of-white-ant"
 date: 2018-06-01
 ---
 

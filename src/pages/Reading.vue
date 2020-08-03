@@ -17,7 +17,7 @@ export default {
   computed: {
     years() {
       const years = {};
-      const posts = this.$page.allPost.edges;
+      const posts = this.$page.allReadings.edges;
       posts.map((post) => {
         const year = post.node.date.split(" ")[2];
         years[year] = "";

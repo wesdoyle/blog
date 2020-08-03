@@ -1,6 +1,7 @@
 ---
 title: "Man's Search for Meaning"
 author: "Victor Frankl"
+slug: "mans-search-for-meaning"
 tags: "memoir, 20th century"
 date: 2019-08-19
 ---

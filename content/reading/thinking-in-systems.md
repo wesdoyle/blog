@@ -2,6 +2,7 @@
 title: "Thinking in Systems: A Primer"
 author: "Donella H. Meadows"
 tags: "systems, complexity, engineering"
+slug: "thinking-in-systems"
 date: 2019-08-19
 ---
 

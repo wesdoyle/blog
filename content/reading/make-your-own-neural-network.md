@@ -1,7 +1,8 @@
 ---
 title: "Make Your Own Neural Network"
-author: "Tariq Rashid",
+author: "Tariq Rashid"
 tags: "machine learning"
+slug: "make-your-own-nn"
 date: 2018-06-01
 ---
 

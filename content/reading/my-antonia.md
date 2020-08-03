@@ -2,6 +2,7 @@
 title: "My Antonia"
 author: "Willa Cather"
 tags: "american literature, nebraska"
+slug: "my-antonia"
 date: 2018-09-20
 ---
 

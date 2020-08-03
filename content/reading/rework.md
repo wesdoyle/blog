@@ -2,6 +2,7 @@
 title: "Rework"
 author: "Jason Fried, David Heinemeier Hansson"
 tags: "leadership, business"
+slug: "rework"
 date: 2019-08-19
 ---
 

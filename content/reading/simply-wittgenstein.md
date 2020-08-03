@@ -1,7 +1,8 @@
 ---
 title: "Simply Wittgenstein"
-author: "James C. Klagge",
+author: "James C. Klagge"
 tags: "philosophy, biography"
+slug: "simply-wittgenstein"
 date: 2018-06-01
 ---
 

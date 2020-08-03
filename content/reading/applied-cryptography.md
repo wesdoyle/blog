@@ -1,6 +1,7 @@
 ---
 title: "Applied Cryptography: Protocols, Algorithms, and Source Code in C"
 author: "Bruce Schneier"
+slug: "applied-cryptography"
 tags: "cryptography"
 date: 2019-08-19
 ---

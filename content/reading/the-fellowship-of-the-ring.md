@@ -2,6 +2,7 @@
 title: "The Fellowship of the Ring"
 author: "J.R.R. Tolkien"
 tags: "epic fantasy"
+slug: "fellowship-of-the-ring"
 date: 2019-08-19
 ---
 
