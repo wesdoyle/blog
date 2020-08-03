@@ -1,0 +1,169 @@
+/*============================================================
+ == Fonts
+/============================================================*/
+
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+/*============================================================
+ == Theme Colors
+/============================================================*/
+
+$dark: #2E382E;
+$indigo: #274060;
+$blue: #34AFFE;
+$red: #EA526F;
+$green: #22CAAF;
+$bluegreen: #22AFDF;
+$light: #FBFBFB;
+
+/*============================================================
+ == Code Block Colors
+/============================================================*/
+
+$code-bg:  #222532;
+$code-normal:#bead9d;
+$code-comment: #9d8875;
+$code-quote: #ca7375;
+$code-keyword: #5c9a61;
+$code-const: #009ba2;
+$code-func: #578fcc;
+$code-def: #b178b5;
+
+/* stylelint-disable property-case, property-no-unknown, selector-pseudo-class-no-unknown */
+
+:export {
+  dark: $dark;
+  indigo: $indigo;
+  blue: $blue;
+  red: $red;
+  light: $light;
+  code-bg: $code-bg;
+  code-normal: $code-normal;
+  code-comment: $code-comment;
+  code-quote: $code-quote;
+  code-keyword: $code-keyword;
+  code-const: $code-const;
+  code-func: $code-func;
+  code-def: $code-def;
+}
+
+/*============================================================
+ == Sizes
+/============================================================*/
+
+$navHeight: 8rem;
+$footerHeight: 14rem;
+$sidebarWidth: 12rem;
+$minAppWidth: 1024px;
+$remBase: 10px;
+
+/*============================================================
+ == Global
+/============================================================*/
+
+html {
+  font-size: $remBase;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: $minAppWidth;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #222;
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lighten($blue, 8%);
+}
+
+
+h1, h2, h3, h4 {
+  color: #777;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.highlight-container, .highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: rgba(50, 205, 225, 0.1);
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 30% 15% 20% 14%;
+  padding: 10px 3px 3px 10px;
+}
+
+.paper {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+:root {
+  --app-background-color: #FFFFFF;
+  --app-font-color: black;
+}
+
+.footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:60px;
+  font-size:.8em;
+  padding: 24px;
+}
+
+.footer a {
+  color:gray;
+}
+
+.footer-links a {
+  margin:0 4px;
+}
+
+@media only screen and (max-width: 500px) {
+}
+
