@@ -7,15 +7,16 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@babel/compat-data": "^7.9.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
+    "cache-loader": "^4.1.0",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-feed": "^1.0.2",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@babel/compat-data": "^7.9.0"
+    "gridsome-plugin-feed": "^1.0.2"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
