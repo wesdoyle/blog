@@ -1,10 +1,10 @@
 <template>
     <div id="readingListContainer">
       <section-header>
-        Reading Notes
+        {{ year }}
       </section-header>
-      <div>
-        Currently transferring notes from old blog. Check back soon.
+      <div class="reading-item">
+        <ReadingItem :key="reading.node.id" v-for="reading in this.readingsByYear" :reading="reading.node" />
       </div>
     </div>
 </template>
@@ -18,13 +18,20 @@ export default {
   components: {
     ReadingItem, SectionHeader
   },
+  computed: {
+    readingsByYear() {
+      const readings = this.$page.allReading.edges;
+      return readings.filter((reading) => {
+        return reading.node.date.includes(this.year);
+      })
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
   @import "../scss/global.scss";
   #readingListContainer {
-    width: 640px;
     a {
       font-weight: bold;
       border-bottom: 2px solid $dark;

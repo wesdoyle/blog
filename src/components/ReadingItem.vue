@@ -1,17 +1,17 @@
 <template>
-  <div class="post-item">
+  <div class="reading-item">
     <span class="date">{{date}}</span>
-    <g-link :to="post.path" class="read">{{post.title}}</g-link>
-    <span class="time-to-read"><i>{{post.timeToRead}} min read</i></span>
+    <g-link :to="reading.path" class="read">{{reading.title}}</g-link>
+    <span class="time-to-read"><i>{{reading.timeToRead}} min read</i></span>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["post"],
+  props: ["reading"],
   computed: {
     date() {
-      return this.post.date.substring(0, this.post.date.length - 4);
+      return this.reading.date.substring(0, this.reading.date.length - 4);
     }
   }
 };

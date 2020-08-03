@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <reading-list />
+    <section class="readings">
+      <ReadingList v-for="year in years" :key="year" :year="year" />
+    </section>
   </Layout>
 </template>
 
@@ -17,9 +19,9 @@ export default {
   computed: {
     years() {
       const years = {};
-      const posts = this.$page.allReadings.edges;
-      posts.map((post) => {
-        const year = post.node.date.split(" ")[2];
+      const readings = this.$page.allReading.edges;
+      readings.map((reading) => {
+        const year = reading.node.date.split(" ")[2];
         years[year] = "";
       });
       return Object.keys(years).sort((a, b) => {
@@ -36,14 +38,13 @@ query {
     siteName
     siteDescription
   }
-  allPost(filter: { date: { gte: "2020" }}) {
+  allReading(filter: { date: { gte: "2018" }}) {
     totalCount
     edges {
       node {
         id
         title
         timeToRead
-        description
         date (format: "MMM D YYYY")
         path
       }

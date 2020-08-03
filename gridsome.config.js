@@ -27,7 +27,7 @@ module.exports = {
       options: {
         path: 'content/reading/**/*.md',
         typeName: 'Reading',
-        route: '/reading/:slug',
+        route: '/reading/:title',
         remark: {
           plugins: [
             ['@gridsome/remark-prismjs', {transformInlineCode: true}]
@@ -44,7 +44,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-feed',
       options: {
-        contentTypes: ['Post'],
+        contentTypes: ['Post', 'Reading'],
         feedOptions: {
           title: 'Wes Doyle',
           description: 'Blog'
