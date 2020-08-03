@@ -1,4 +1,4 @@
-# Wes Doyle's Blog 
+# Blog 
 
 This is my personal blog.
 
