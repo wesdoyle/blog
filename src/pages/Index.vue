@@ -24,7 +24,7 @@ export default {
         years[year] = "";
       });
       return Object.keys(years).sort((a, b) => {
-        return b - a;
+        return b - a
       });
     }
   }
