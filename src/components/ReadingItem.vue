@@ -1,13 +1,21 @@
 <template>
   <div class="reading-item">
-    <span class="date">{{date}}</span>
-    <g-link :to="reading.path" class="read">{{reading.title}}</g-link>
-    <span class="time-to-read"><i>{{reading.timeToRead}} min read</i></span>
+    <div class="reading-title">
+      <reading-header>
+        {{reading.title}}
+      </reading-header>
+    </div>
+    <article v-html="reading.content" />
   </div>
 </template>
 
 <script>
+import ReadingHeader from './ReadingHeader';
+
 export default {
+  components: {
+    ReadingHeader
+  },
   props: ["reading"],
   computed: {
     date() {
@@ -17,8 +25,24 @@ export default {
 };
 </script>
 
+<page-query>
+query Reading ($path: String!) {
+  metadata {
+    siteName
+    siteDescription
+  }
+  reading: reading (path: $path) {
+    id
+    title
+    content
+    date (format: "D MMMM YYYY")
+    timeToRead
+  }
+}
+</page-query>
+
 <style lang="scss">
-  @import "../scss/global.scss";
+@import "../scss/global.scss";
 .date {
   margin-right:10px;
   min-width: 60px;
