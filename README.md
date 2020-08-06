@@ -2,7 +2,7 @@
 
 This is my personal blog.
 
-[wesdoyle.net](wesdoyle.net)
+[https://wesdoyle.net](https://wesdoyle.net)
 
 ## Notes
 
