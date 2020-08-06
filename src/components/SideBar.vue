@@ -13,7 +13,7 @@
       </div>
       <div class="about-section">
         I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>, where I create online courses focusing on full stack web development.
-        I create videos on YouTube about software engineering, and enjoy to hike and play chess.
+        I enjoy creating videos about software engineering, hiking, and playing chess.
       </div>
     </section>
     <section id="externalLinks">
