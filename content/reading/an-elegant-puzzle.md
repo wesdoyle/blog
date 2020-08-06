@@ -20,6 +20,8 @@ bootstrap unit tests into a non-testing company, but the best solution
 to frequent interruptions I’ve seen is a culture of documentation,
 documentation reading, and a documentation search that actually works.
 
+##
+
 > Most system-implemented systems are designed to support one to two orders
 magnitude of growth from the current load. Even systems designed for more growth
 tend to run into limitations within one to two orders of magnitude. If your
@@ -29,6 +31,8 @@ much more quickly.) The cardinality of supported systems increases over time as
 you add teams, and as "trivial" systems go from unsupported afterthoughts to focal
 points for entire teams as the systems reach scaling plateaus (things like Apache
 Kafka, mail delivery, Redis, etc.).
+
+##
 
 > Instead of asking the candidate to explain some architecture on the spur
 of the moment, give them a warning before the interview that you'll ask them to
@@ -40,6 +44,8 @@ problem can involve algorithmic components without coming across as a pointless
 algorithmic question. (One company I spoke with had me implement a full-stack
 auto-suggest feature for a search inbox, which required implementing a prefix tree,
 but the interviewer avoided framing it as yet another algo question.)
+
+##
 
 > Have you ever worked at a company where the same two people always got
 the most important projects? Me too. It's frustrating to watch these opportunities

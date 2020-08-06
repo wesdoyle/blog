@@ -30,8 +30,12 @@ reality, it is at most a crude approximation.
 > System structure is the source of system behavior. System behavior
 reveals itself as a series of events over time.
 
+##
+
 > The bounded rationality of each actor in a system may not lead to decisions
 that further the welfare of the system as a whole.
+
+##
 
 > Everything we know about the world is a model
 

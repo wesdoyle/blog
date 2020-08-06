@@ -37,6 +37,8 @@ us all that we can ever be. Now I understood that the same road was to bring us
 together again. Whatever we had missed, we possessed together the precious, the
 incommunicable past.'
 
+##
+
 > In the course of twenty crowded years one parts with many illusions.
 I did not wish to lose the early ones. Some memories are realities, and are
 better than anything that can ever happen to one again. She asked me whether I
