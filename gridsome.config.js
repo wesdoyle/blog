@@ -12,7 +12,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/**/*.md',
+        path: 'content/posts/**/*.md',
         typeName: 'Post',
         route: '/post/:title',
         remark: {
@@ -25,7 +25,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'readings/**/*.md',
+        path: 'content/reading/**/*.md',
         typeName: 'Reading',
         route: '/book/:slug',
         remark: {

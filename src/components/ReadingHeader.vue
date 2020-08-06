@@ -16,10 +16,9 @@
   .reading-header {
     font-weight: bold;
     font-size: 1.5rem;
-    padding: 1rem 2rem 1rem 0;
+    padding: 2rem 4rem;
     background: #fbfbfb;
-    display: inline-flex;
-    margin: 2rem 0;
-    text-decoration: underline;
+    display: inline-block;
+    margin: 1rem 0;
   }
 </style>

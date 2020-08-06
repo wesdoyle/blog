@@ -27,6 +27,7 @@ query Reading ($path: String!) {
    reading: reading (path: $path) {
     id
     title
+    author
     content
     date (format: "D MMMM YYYY")
     timeToRead

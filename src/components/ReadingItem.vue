@@ -2,7 +2,12 @@
   <div class="reading-item">
     <div class="reading-title">
       <reading-header>
-        {{reading.title}}
+        <div class="reading-title">
+          {{reading.title}}
+        </div>
+        <div class="reading-author">
+          {{reading.author}}
+        </div>
       </reading-header>
     </div>
     <article v-html="reading.content" />
@@ -25,22 +30,6 @@ export default {
 };
 </script>
 
-<page-query>
-query Reading ($path: String!) {
-  metadata {
-    siteName
-    siteDescription
-  }
-  reading: reading (path: $path) {
-    id
-    title
-    content
-    date (format: "D MMMM YYYY")
-    timeToRead
-  }
-}
-</page-query>
-
 <style lang="scss">
 @import "../scss/global.scss";
 .date {
@@ -54,4 +43,14 @@ query Reading ($path: String!) {
   color:gray;
   font-size:.8em;
 }
+
+.reading-title {
+  text-decoration: underline;
+}
+
+.reading-author{
+  display: block;
+  font-size: 1.1rem;
+}
+
 </style>

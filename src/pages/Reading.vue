@@ -44,6 +44,7 @@ query {
       node {
         id
         title
+        author
         content
         timeToRead
         date (format: "MMM D YYYY")
