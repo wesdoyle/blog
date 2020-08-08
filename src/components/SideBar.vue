@@ -12,8 +12,9 @@
         human learning, and search.
       </div>
       <div class="about-section">
-        I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>, where I create online courses focusing on full stack web development.
-        I enjoy creating videos about software engineering, hiking, and playing chess.
+        I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>
+        and <a href="https://entryleveleng.com" class="pd-link">Entry Level Eng</a>.
+        When I'm not hacking on one of these projects, I enjoy reading, hiking, and playing chess.
       </div>
     </section>
     <section id="externalLinks">
@@ -24,7 +25,7 @@
 
       <div class="subsection-group">
         <a href="https://courses.productivedev.com" target="_blank">
-          <img src="../assets/logo-sq-dark.png" width="45px">
+          <img src="../assets/logo-sq-dark.png" width="45px" class="rofile-img">
         </a>
 
         <a href="https://github.com/wesdoyle" target="_blank">
@@ -85,5 +86,9 @@
   .pd-link {
     text-decoration: underline;
     font-weight: bolder;
+  }
+
+  img {
+    filter: grayscale(20%);
   }
 </style>

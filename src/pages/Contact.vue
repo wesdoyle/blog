@@ -12,7 +12,7 @@
         </span>
         </p>
         <p>
-          I respond to e-mails daily and will get back to you as soon as possible.
+          I respond to emails daily and will get back to you as soon as possible.
         </p>
       </div>
     </div>

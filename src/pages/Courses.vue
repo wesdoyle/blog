@@ -7,13 +7,17 @@
       <div class="courses-section">
         <p>
           I create in-depth free and premium courses on
-          <a href="https://courses.productivedev.com" target="_blank">
-            ProductiveDev
-          </a>
+          <span class="highlight-container">
+            <a href="https://courses.productivedev.com" target="_blank">
+              ProductiveDev
+            </a>
+          </span>
           and
-          <a href="https://www.youtube.com/channel/UCfniixfhHqpIGbU7z2JCNJw" target="_blank">
-            my YouTube channel.
-          </a>
+          <span class="highlight-container">
+            <a href="https://www.youtube.com/channel/UCfniixfhHqpIGbU7z2JCNJw" target="_blank">
+              my YouTube channel.
+            </a>
+          </span>
         </p>
         <p>
           I enjoy helping others learn to code and to think about software development as a craft

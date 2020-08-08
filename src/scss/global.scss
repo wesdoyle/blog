@@ -111,7 +111,7 @@ blockquote::after{
   font-size: 6rem;
   position: absolute;
   font-family: Serif;
-  bottom: -1;
+  bottom: -2rem;
   right: 1rem;
   color: rgba(0,140,60,0.1);
 }
@@ -155,12 +155,13 @@ h3 {
   margin-left: -3px;
   margin-right: -3px;
   position: absolute;
-  background: rgba(50, 205, 225, 0.1);
   transform: rotate(2deg);
   top: -1px;
   left: -1px;
   border-radius: 30% 15% 20% 14%;
   padding: 10px 3px 3px 10px;
+  background: rgba(150, 205, 225, 0.2);
+  z-index:-1;
 }
 
 .paper {
