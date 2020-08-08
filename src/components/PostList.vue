@@ -1,8 +1,5 @@
 <template>
   <div class="post-list">
-    <section-header>
-      Blog
-    </section-header>
     <h2>{{year}}</h2>
     <div class="post-item">
       <PostItem :key="post.node.id" v-for="post in this.postsByYear" :post="post.node" />
