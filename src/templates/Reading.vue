@@ -35,7 +35,8 @@ query Reading ($path: String!) {
 }
 </page-query>
 
-<style>
+<style lang="scss">
+  @import "../scss/global.scss";
   .article {
     margin-top: 15px;
   }

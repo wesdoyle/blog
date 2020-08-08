@@ -1,6 +1,6 @@
 ---
-title: "Serverless Stripe Integration"
-description: "Setting up Stripe with AWS Lambda + API Gateway"
+title: "Serverless Stripe Webhooks Integration"
+description: "Setting up Stripe Webhooks with AWS Lambda + API Gateway"
 date: 2020-08-20
 ---
 

@@ -34,8 +34,10 @@ query Post ($path: String!) {
 }
 </page-query>
 
-<style>
-  .article {
+<style lang="scss">
+@import "../scss/global.scss";
+
+.article {
     margin-top: 15px;
   }
 
