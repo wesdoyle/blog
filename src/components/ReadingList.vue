@@ -1,8 +1,8 @@
 <template>
     <div id="readingListContainer">
-      <section-header>
+      <div class="highlight-container reading-year">
         {{ year }}
-      </section-header>
+      </div>
       <div class="reading-item">
         <ReadingItem :key="reading.node.id" v-for="reading in this.readingsByYear" :reading="reading.node" />
       </div>
@@ -36,5 +36,11 @@ export default {
       font-weight: bold;
       border-bottom: 2px solid $dark;
     }
+  }
+
+  .reading-year {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
   }
 </style>
