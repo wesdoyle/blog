@@ -6,8 +6,7 @@ tags: "nature"
 date: 2020-08-29
 ---
 
-John Muir's ecstatic descriptions of the wilderness and his experience in the natural world 
-are contagious.  I listened to this collection of essays on audio book recently on several 
+One of my favorite collections of nature writing. I listened to this collection of essays on audio book recently on several 
 walks at Lake Kegonsa and Governor Nelson state parks.  
 
 These essays are an engaging patchwork of observations about the beauty of the vast landscapes 
@@ -48,6 +47,7 @@ One of my favorite essays from the collection is "A Near View of the High Sierra
 > the summit like wings of flame, rendering the sublime scene yet more impressive; then came darkness 
 > and the stars.
 
+---
 
 > How still the woods seem from here, yet how lively a stir the hidden animals are making; digging, 
 > gnawing, biting, eyes shining, at work and play, getting food, rearing young, roving through the 
@@ -57,6 +57,7 @@ One of my favorite essays from the collection is "A Near View of the High Sierra
 > enjoyment, humming like a hive, singing the old new song of creation.
 > (John Muir, "The Yellowstone National Park")
 
+---
 
 > Now comes the gloaming. The alpenglow is fading into earthy, murky gloom, but do not let your 
 > town habits draw you away to the hotel. Stay on this good fire-mountain and spend the night 
@@ -66,6 +67,7 @@ One of my favorite essays from the collection is "A Near View of the High Sierra
 > back with joy to your wanderings in the blessed old Yellowstone Wonderland.
 > (John Muir, "The Yellowstone National Park")
  
+---
  
 > It may be asked, What have mountains fifty or a hundred miles away to do with Twenty Hill Hollow? 
 > To lovers of the wild, these mountains are not a hundred miles away. Their spiritual power and the 
