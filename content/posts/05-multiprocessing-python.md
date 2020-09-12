@@ -133,3 +133,8 @@ if __name__ == "__main__":
 ```
 
 ```> Average processing time for 3 samples with 10 workers for 12 tasks: 5.542...```
+
+Here we can see a significant improvement in performance by taking advantage of additional cores for CPU-bound work.
+
+
+

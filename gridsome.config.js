@@ -17,7 +17,7 @@ module.exports = {
         route: '/post/:title',
         remark: {
           plugins: [
-            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
+            ['@gridsome/remark-prismjs', {transformInlineCode: false}]
           ]
         }
       }
