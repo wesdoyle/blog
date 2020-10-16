@@ -6,9 +6,24 @@ date: 2020-10-15
 
 Objects all over the world are hiding and waiting to be named.  Their behavior lives in private methods.
 
-Why would we create and name an object that does something that any other object should not know about?
+One of the reasons objects are powerful - in the OOP sense - is because we can write and reason about them as [anthropomorphic collaborators](https://sandimetz.com/blog/2018/21/what-does-oo-afford).
+I realize that for some developers, building systems of software in terms of conceptual objects is 
+at least [poor taste](http://loup-vaillant.fr/articles/anthropomorphism-and-oop) 
+at worst [an expensive disaster which must end](http://www.smashcompany.com/technology/object-oriented-programming-is-an-expensive-disaster-which-must-end), 
+and in any case should probably [should be unlearned](https://dpc.pw/the-faster-you-unlearn-oop-the-better-for-you-and-your-software).
+This particular exploration is interesting, but I'll save it for another post.
 
-One of the reasons objects are powerful - in the OOP sense - is because we can write them to be anthropomorphic collaborators.
+For now, let's assume we're working to maximize our ability to reason about our code using an object-oriented approach, with a focus on things like message-sending, inversion of control, late-binding, and polymorphism. We want to create objects that have a "functional" flavor and behavior that we can directly test.
+
+Consider the following question - Why would we create and name an object that does something that no other object should know about?
+
+This isn't a rhetorical question - I'd like us to consider this a bit deeply, as OOP-ers.  To aid our efforts, let's consider a few real-world analogues.
+
+- TBD
+
+- TBD
+
+- TBD
 
 Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.  We can write explicit assertions about the public interface of objects - public methods can be unit tested directly.
 
