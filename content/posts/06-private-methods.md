@@ -1,24 +1,25 @@
 ---
 title: "Private Methods are Usually a Smell"
-description: "An object-oriented critique of private methods"
+description: "A critique of private methods"
 date: 2020-10-15
 ---
 
-Objects all over the world are hiding and waiting to be named.  Their behavior lives in our private methods.
+Objects all over the world are hiding and waiting to be named.  Their behavior lives in private methods.
 
 Why would we create and name an object that does something that any other object should not know about?
 
 One of the reasons objects are powerful - in the OOP sense - is because we can write them to be anthropomorphic collaborators.
 
-Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.
+Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.  We can write explicit assertions about the public interface of objects - public methods can be unit tested directly.
 
 While there are a few very specific reasons for hiding behavior, I've found that private methods are often an excuse for one of the following:
 
-__1__ - Hiding implementation details (inside a private method)
+__1__ - Hiding _"implementation details"_
 
-__2__ - Not realizing that an object doesn't really want to be doing something (so we dump this code inside a private method and forget about it)
+__2__ - Failing to realize that an object doesn't really _want_ to be doing part the job we initially gave it
 
-__3__ - Avoiding extracting and naming something (usually just out of laziness)
+__3__ - Avoiding extracting and naming something (usually out of laziness, once we realize we're doing __1__ or __2__)
+
 
 ```c-sharp
 ```
