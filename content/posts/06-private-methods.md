@@ -1,6 +1,6 @@
 ---
-title: "Private Methods are Usually a Smell"
-description: "A critique of private methods"
+title: "Private Methods can be a Smell"
+description: "Extract private methods to new objects"
 date: 2020-10-18
 ---
 
@@ -20,7 +20,7 @@ no other object should know about?
 This isn't a rhetorical question - I'd like us to consider this a bit carefully, as OOP-ers.
 To aid our efforts, let's consider a few real-world analogies.  I think it helps to spend a bit of time
 to think of non-virtual systems that can be reasoned about, repaired, changed, swapped-out, and
-troubleshooted at __different levels of abstraction__.  Let's experiment with a few examples:
+troubleshooted at __different levels of abstraction__.  Let's consider a few examples:
 
 - __A Bicycle__ - the bicycle itself is a system.  It contains many mechanical subsystems: the
 frame, the brake system, the gears, the suspension, the wheels, etc.  Each of these subsystems contain mechanical
@@ -44,15 +44,15 @@ subsystems at varying levels of abstraction - from the means of assembly to the 
 books that it holds - each can be conceived of as subsystems, depending on the specific purpose of reasoning about the 
 bookshelf itself.
 
-Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.
-We can talk about the subsystems of a thing only because we have meaningful names for them, and because they have publicly
-understood behavior.  We can talk about repairing the brake system on a bicycle, changing out our ERP software at the company, 
-and moving the height of the shelving on the bookshelf.
+Objects have the potential to represent behaviors we can anticipate and reason about at the _named_ level of abstraction.
+We can talk about the subsystems of a thing only because we have meaningful names for them, and because they _have publicly
+understood behavior_.  We can talk about repairing the brake system on a bicycle, changing out our ERP software at the company, 
+and moving the height of the shelving on the bookshelf.  
 
 Is it reasonable to say that the brake system is an implementation detail of the bicycle? Of course -
-but only when we're talking at a very high level of abstraction relative to the other mechanical subsystems 
-of the bicycle.  If the brakes don't work, we can say that the bicycle needs to be repaired, but, as mechanics, 
-it's often more reasonable to talk specifically about the particular aspects of the brake system that are
+but only when we're talking at a _very high level of abstraction_ relative to system as a whole. 
+If the brakes don't work, we can say that the bicycle needs to be repaired, but, as mechanics, 
+it's often more useful to talk specifically about the particular aspects of the brake system that are
 the root cause of failure, rather than to say "the bicycle is broken - it's due to an implementation detail."  
 
 As bicycle mechanics, we learn how to address the state of a bicycle at lower and more nuanced levels of 
@@ -60,7 +60,9 @@ abstraction than someone who does not work on bicycles.  We can test and make as
 their own right, just as we can talk about the state of the bicycle as a whole.
 
 As software developers, we can write explicit assertions about the public interface of objects -
-public methods or combinations of methods of named objects are unit tested.
+public methods or combinations of methods of named objects are unit tested.  When an object hides behavior,
+it may be worth asking - is it really the responsibility of this object to be doing this?  Is this method 
+defined the right level of abstraction, or should it be moved to a collaborating object and be made public?
 
 Just as a bicycle mechanic typically does not manufacture or assemble bike frames or brake calipers, we don't
 typically write database software or network drivers.  At a "low" level of abstraction (relative to our
@@ -75,14 +77,15 @@ and implement.  These are the things we'd like to be able to test directly.
 We have no good way to test private members of our objects, as they're explicitly hidden from the
 public interface.  We could superficially work around this by changing an access modifier to `protected`, 
 inheriting from the class we need to test in our test class, exposing these methods in that context to test,
-but this seems like adding tension to the system under test. The code is probably actually telling you, 
+but this seems like treating a symptom of incomplete design. If you're doing this, the code is probably telling you, 
 
-> "Hey! I don't really want to be an implementation detail - you want to test me, after all!"
+> "Hey! I don't really want to be an implementation detail - you want to test me, after all.
+> I actually belong to the public interface of a different class."
 
-When we listen to the ways that data flows through our objects as we write, refactor, 
+When we _listen to the ways that data flows through our objects_ as we write, refactor, 
 and extend their behavior, they often send us such clues.  We feel the software splitting at 
 the seams when we reason about what the appropriate subsystems are. 
-As OOPers, these seams are potential object boundaries.
+As OOP-ers, these seams are often potential object boundaries.
 
 While there are certain specific reasons for hiding behavior, 
 I've found that private methods are usually the result of one of the following excuses:
@@ -91,9 +94,9 @@ I've found that private methods are usually the result of one of the following e
 
 ### 2. - __Failing to realize that an object doesn't really _want_ to be doing part the job we've given it__
 
-### 3. - __Avoiding extracting and naming something (usually out of laziness, once we realize we're doing 1. or 2.)__
+### 3. - __Avoiding extracting and naming a new class (usually out of laziness, once we realize we're doing 1. or 2.)__
 
-When is the creation of a private method on an object that has behavior a reasonable decision?  
+When is the creation of a private method a reasonable design decision?  
 I can think of a few valid reasons, each of which occurs in generally limited circumstances:
 
 - As a more interpretable synonym for some true implementation detail of an object. This can occur when a
@@ -106,8 +109,8 @@ behavior. In this case, the decision to include a private wrapper should be weig
 of wrapping the entire "thing we don't control" in our own class that publicly exposes more useful 
 names and hides the implementation details of the dependency.
 
-- Using a private constructor in specific cases like implementing the Singleton pattern.
+- Using a private constructor for specific cases, like implementing the Singleton, Builder, or Factory Method patterns.
 
-Objects whose functionality we really care about are hiding and waiting to be named in many of our private methods!
+Objects whose functionality we really care about are hidden, waiting to be extracted and named in many of our private methods!
 
 
