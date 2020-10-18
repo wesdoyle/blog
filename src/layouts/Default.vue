@@ -54,11 +54,12 @@ export default {
     display: flex;
     height: 100vh;
     padding: 1rem 6rem;
+    margin-bottom: 3rem;
   }
 
   #mainContent {
     flex-grow: 4;
-    padding: 2rem;
+    padding: 2rem 16rem 8rem 8rem;
     text-align: left;
   }
 

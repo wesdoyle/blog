@@ -39,6 +39,8 @@ query Post ($path: String!) {
 
 .article {
     margin-top: 15px;
+    margin-bottom: 128px;
+    width: 80%;
   }
 
   .article-title {
