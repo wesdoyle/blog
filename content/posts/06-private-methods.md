@@ -4,54 +4,104 @@ description: "A critique of private methods"
 date: 2020-10-15
 ---
 
-Objects all over the world are hiding and waiting to be named.  Their behavior lives in private methods.
+One of the reasons objects are powerful - in the OOP sense - is because we can write
+and reason about them as [anthropomorphic collaborators](https://sandimetz.com/blog/2018/21/what-does-oo-afford).
+I realize that such a characterization of objects is not to everyone's liking, but I'd like to set the context
+for the following observations about private methods from this viewpoint.
 
-One of the reasons objects are powerful - in the OOP sense - is because we can write and reason about them as [anthropomorphic collaborators](https://sandimetz.com/blog/2018/21/what-does-oo-afford).
-I realize that for some developers, building systems of software in terms of conceptual objects is 
-at least [poor taste](http://loup-vaillant.fr/articles/anthropomorphism-and-oop) 
-at worst [an expensive disaster which must end](http://www.smashcompany.com/technology/object-oriented-programming-is-an-expensive-disaster-which-must-end), 
-and in any case should probably [should be unlearned](https://dpc.pw/the-faster-you-unlearn-oop-the-better-for-you-and-your-software).
-This particular exploration is interesting, but I'll save it for another post.
+For now, let's assume we're working to maximize our ability to reason about our code using
+an object-oriented approach, with a focus on principles like message-sending, inversion of control,
+late-binding, and polymorphism. We want to create objects that, in fact, often have a "functional"
+flavor and expose behavior that we can directly test.
 
-For now, let's assume we're working to maximize our ability to reason about our code using an object-oriented approach, with a focus on things like message-sending, inversion of control, late-binding, and polymorphism. We want to create objects that have a "functional" flavor and behavior that we can directly test.
+Consider the following question - Why would we create and name an object that does something that
+no other object should know about?
 
-Consider the following question - Why would we create and name an object that does something that no other object should know about?
+This isn't a rhetorical question - I'd like us to consider this a bit carefully, as OOP-ers.
+To aid our efforts, let's consider a few real-world analogies.  I think it helps to spend a bit of time
+to think of non-virtual systems that can be reasoned about, repaired, changed, swapped-out, and
+troubleshooted at __different levels of abstraction__.  Let's experiment with a few examples:
 
-This isn't a rhetorical question - I'd like us to consider this a bit deeply, as OOP-ers.  To aid our efforts, let's consider a few real-world analogues.
+- _A Bicycle_ - the bicycle itself is a system.  It contains many mechanical subsystems: the
+frame, the brake system, the gears, the suspension, the wheels, etc.  Each of these subsystems contain mechanical
+subsytems of their own - the subcomponents, materials, and fasteners.  We choose to stop identifying
+subsystems as such at the lowest levels of abstraction that are useful for us to reason about, repair,
+or otherwise change anythiing that relates to the highest-level of abstraction we care about - for instance,
+the bicycle (or, perhaps, some combination of the bicycle, the cyclist, and their environment).
 
-- TBD
+- _A Company that Builds Software_ - the company itself is a system.  It contains many subsystems across
+many orthogonal dimensions.  The various departments - engineering, HR, executive staff - are subsystems.
+The complex processes by which mail is delivered, offices are cleaned, coffee is brewed, paychecks are deposited,
+bills are paid, insurance is distributed, holidays are determined, are all subsystems.  The processes by
+which individual employees complete their work are subsystems.  The software the individuals use to complete
+these processes are subsystems.
 
-- TBD
+- _A bookshelf_ - The bookshelf itself is a system.  Like the bicycle and software company, it contains many
+subsystems at varying levels of abstraction - from the means of assembly to the mechanical components to the
+books that the bookshelf holds - each can be conceived of as subsystems of the bookshelf, depending on the
+specific purpose of reasoning about the bookshelf itself.
 
-- TBD
+Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.
+We can talk about the subsystems of a thing only because we have meaningful names for them.
+We can talk about repairing the brake system on a bicycle, changing our ERP software at the company, and moving the height of
+the shelving on the bookshelf.
 
-Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.  We can write explicit assertions about the public interface of objects - public methods can be unit tested directly.
+Is it reasonable to say that the brake system is an implementation detail of the bicycle? Of course -
+but only when we're talking at a very high level of abstraction relative to the other mechanical subsystems 
+of the bicycle.  If the brakes don't work, we can say that the bicycle needs to be repaired, but, as mechanics, 
+it's often more reasonable to talk specifically about the particular aspects of the brake system that are
+the root cause of failure, rather than to say that the bicycle is broken.  As bicycle mechanics, we learn how to 
+address the state of a bicycle at lower and more nuanced levels of abstraction than someone who does not work 
+on bicycles.  We can test and make assertions about the subsystems in their own right, just as we can talk about
+the state of the bicycle as a whole.
 
-While there are a few very specific reasons for hiding behavior, I've found that private methods are often an excuse for one of the following:
+As software developers, we can write explicit assertions about the public interface of objects -
+public methods or combinations of methods of named objects are unit tested.
 
-__1__ - Hiding _"implementation details"_
+Just as a bicycle mechanic typically does not manufacture or assemble bike frames or brake calipers, we don't
+typically write database software or network drivers.  At a "low" level of abstraction (relative to our
+business processes), we delegate responsibility to others, and build on top of those details.
+We don't test database internals separately from our business logic, and we might often test our business logic
+without their direct collaboration.  Those lowest-level subsystems are the true implementation details of the 
+systems we design.
 
-__2__ - Failing to realize that an object doesn't really _want_ to be doing part the job we initially gave it
+Let's bring this thought back to the things we do control in our system - the objects we name, specify,
+and implement.  These are the things we'd like to be able to test directly.
 
+We have no good way to test private members of our objects, as they're explicitly hidden from the
+public interface.  We could superficially work around this by changing an access modifier to `protected`, 
+inheriting from the class we need to test in our test class, exposing these methods in that context to test,
+but this seems like adding tension to the system under test. The code is probably actually telling you, 
+
+> "Hey! I don't really want to be an implementation detail - you want to test me, after all!"
+
+When we listen to the ways that data flows through our objects as we write, refactor, 
+and extend their behavior, they often send us such clues.  We feel the software splitting at 
+the seams when we reason about what the appropriate subsystems are. 
+As OOPers, these seams are potential object boundaries.
+
+While there are a few very specific reasons for hiding behavior, 
+I've found that private methods are often an excuse for one of the following:
+
+__1__ - Hiding so-called _"implementation details"_
+__2__ - Failing to realize that an object doesn't really _want_ to be doing part the job we've given it
 __3__ - Avoiding extracting and naming something (usually out of laziness, once we realize we're doing __1__ or __2__)
 
+When is the creation of a private method on an object that has behavior a reasonable decision?  
+I can think of a few valid reasons, each of which occurs in generally limited circumstances:
 
-```c-sharp
-```
+- As a more interpretable "synonym" for some true implementation detail of an object. This can occur when a
+reusable, descriptive name should be applied to an otherwise awkward (often Boolean) operation 
+and has specific use only in the scope of the object where it is used.
 
-When is the creation of a private method on an object that has behavior a reasonable decision?  I can think of a few valid reasons, each of which occurs in generally limited circumstances:
+- When a collaborator outside of our control exposes public method that is poorly named and can be 
+wrapped with a more descriptive private method for use in the implementation of our object's public 
+behavior. In this case, the decision to include a private wrapper should be weighed against the cost 
+of wrapping the entire "thing we don't control" in our own class that publicly exposes more useful 
+names and hides the implementation details of the dependency.
 
-- As a more interpretable "synonym" for some implementation detail. This can occur when a descriptive name can be applied to an otherwise awkward one-line operation and has specific use only in this context.
+- Using a private constructor in specific cases like implementing the Singleton pattern.
 
-```c-sharp
-```
+Objects whose functionality we really care about are hiding and waiting to be named in private methods.
 
-- When a collaborator outside of our control has a public method that is poorly named and can be wrapped with a more descriptive private method for use in the implementation of our object's public behavior. In this case, the decision to include a private wrapper should be weighed against the cost of wrapping the entire "thing we don't control" in our own class that publicly exposes more useful names.
 
-```c-sharp
-```
-
-- To implement the Singleton pattern
-
-```c-sharp
-```
