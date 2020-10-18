@@ -30,24 +30,24 @@ or otherwise change anything that relates to the highest-level of abstraction we
 the bicycle (or, perhaps, some combination of the bicycle, the cyclist, and their environment).
 
 
-- __A Company that Builds Software__ - the company itself is a system.  It contains many subsystems across
-many orthogonal dimensions.  The various departments - engineering, HR, executive staff - are subsystems.
-The complex processes by which mail is delivered, offices are cleaned, coffee is brewed, paychecks are deposited,
-bills are paid, insurance is distributed, holidays are determined, are all subsystems.  The processes by
-which individual employees complete their work are subsystems.  The software the individuals use to complete
-these processes are subsystems.
+- __A Company that Builds Software__ - the company itself is a system.  
+It contains many subsystems along overlapping and orthogonal dimensions. 
+The various departments - engineering, HR, executive staff - are examples of subsystems.
+The complex processes of package delivery, office cleaning, coffee brewing, paycheck depositing,
+bill paying, insurance distributing, holiday observing, are all subsystems.  The processes by
+which individual employees complete their work are subsystems.  
+The software used in all of these various processes are subsystems.
 
 
 - __A bookshelf__ - The bookshelf itself is a system.  Like the bicycle and software company, it contains many
 subsystems at varying levels of abstraction - from the means of assembly to the mechanical components to the
-books that the bookshelf holds - each can be conceived of as subsystems of the bookshelf, depending on the
-specific purpose of reasoning about the bookshelf itself.
-
+books that it holds - each can be conceived of as subsystems, depending on the specific purpose of reasoning about the 
+bookshelf itself.
 
 Objects have the potential to represent behaviors we can anticipate and reason about at the _naming_ level of abstraction.
-We can talk about the subsystems of a thing only because we have meaningful names for them.
-We can talk about repairing the brake system on a bicycle, changing our ERP software at the company, and moving the height of
-the shelving on the bookshelf.
+We can talk about the subsystems of a thing only because we have meaningful names for them, and because they have publicly
+understood behavior.  We can talk about repairing the brake system on a bicycle, changing out our ERP software at the company, 
+and moving the height of the shelving on the bookshelf.
 
 Is it reasonable to say that the brake system is an implementation detail of the bicycle? Of course -
 but only when we're talking at a very high level of abstraction relative to the other mechanical subsystems 
