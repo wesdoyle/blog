@@ -53,10 +53,11 @@ Is it reasonable to say that the brake system is an implementation detail of the
 but only when we're talking at a very high level of abstraction relative to the other mechanical subsystems 
 of the bicycle.  If the brakes don't work, we can say that the bicycle needs to be repaired, but, as mechanics, 
 it's often more reasonable to talk specifically about the particular aspects of the brake system that are
-the root cause of failure, rather than to say that the bicycle is broken.  As bicycle mechanics, we learn how to 
-address the state of a bicycle at lower and more nuanced levels of abstraction than someone who does not work 
-on bicycles.  We can test and make assertions about the subsystems in their own right, just as we can talk about
-the state of the bicycle as a whole.
+the root cause of failure, rather than to say "the bicycle is broken - it's due to an implementation detail."  
+
+As bicycle mechanics, we learn how to address the state of a bicycle at lower and more nuanced levels of 
+abstraction than someone who does not work on bicycles.  We can test and make assertions about the subsystems in 
+their own right, just as we can talk about the state of the bicycle as a whole.
 
 As software developers, we can write explicit assertions about the public interface of objects -
 public methods or combinations of methods of named objects are unit tested.
