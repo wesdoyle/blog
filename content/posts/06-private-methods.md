@@ -1,5 +1,5 @@
 ---
-title: "Private Methods can be a Smell"
+title: "Private Methods are often a Smell"
 description: "Extract private methods to new objects"
 date: 2020-10-18
 ---
