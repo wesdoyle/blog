@@ -88,9 +88,9 @@ the seams when we reason about what the appropriate subsystems are.
 As OOP-ers, these seams are often potential object boundaries.
 
 While there are certain specific reasons for hiding behavior, 
-I've found that private methods are usually the result of one of the following excuses:
+I've found that private methods are often the result of one of the following:
 
-### 1. - __Hiding _"implementation details"_ that contain behavior we actually care about__
+### 1. - __Hiding "implementation details" that contain behavior we actually care about__
 
 ### 2. - __Failing to realize that an object doesn't really _want_ to be doing part the job we've given it__
 
