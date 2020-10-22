@@ -7,7 +7,7 @@ date: 2019-11-28
 ### scp
 
 ```bash
-scp local_file.txt -i path_to_secret.pem remote_username@10.10.0.2:/remote/directory
+scp -i path_to_secret.pem local_file.txt remote_username@10.10.0.2:/remote/directory
 scp -i path_to_secret.pem remote_username@10.10.0.2:/remote/file.txt /local/directory
 scp user1@host_1.com:/files/file.txt user2@host_2.com:/files
 ```
