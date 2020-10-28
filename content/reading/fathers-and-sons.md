@@ -24,5 +24,6 @@ finding themselves out of time in one way or another.
 
 > "Whereas I think: I’m lying here in a haystack... The tiny space I occupy is so infinitesimal in comparison with the rest of space, which I don’t occupy and which has no relation to me. And the period of time in which I’m fated to live is so insignificant beside the eternity in which I haven’t existed and won’t exist... And yet in this atom, this mathematical point, blood is circulating, a brain is working, desiring something... What chaos! What a farce!"
 
+
 > "A man's capable of understanding anything - how the ether vibrates, and what's going on in the sun - but how any other man can blow his nose differently from him, that he's incapable of understanding."
 
