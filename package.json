@@ -16,7 +16,8 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "cache-loader": "^4.1.0",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-feed": "^1.0.2"
+    "gridsome-plugin-feed": "^1.0.2",
+    "vue-server-renderer": "^2.6.11"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
