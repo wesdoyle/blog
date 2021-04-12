@@ -13,7 +13,7 @@
       </div>
       <div class="about-section">
         I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>.
-        I enjoy writing, understanding, and helping others understand software. I also enjoy reading, walking, and chess.
+        I enjoy writing and understanding software. I like helping other people do the same. I also enjoy reading, walking, and chess.
       </div>
     </section>
     <section id="externalLinks">
