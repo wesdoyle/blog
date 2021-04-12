@@ -13,7 +13,7 @@
       </div>
       <div class="nav-item">
         <router-link to="/reading">
-          My Reading Notes
+          Reading Notes
         </router-link>
       </div>
       <div class="nav-item">
