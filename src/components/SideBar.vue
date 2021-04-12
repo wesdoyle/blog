@@ -12,9 +12,8 @@
         human learning, and search.
       </div>
       <div class="about-section">
-        I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>
-        and <a href="https://entryleveleng.com" class="pd-link">Entry Level Eng</a>.
-        When I'm not hacking on one of these projects, I enjoy reading, hiking, and playing chess.
+        I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>.
+        I enjoy writing, understanding, and helping others understand software. I also enjoy reading, walking, and chess.
       </div>
     </section>
     <section id="externalLinks">
@@ -27,7 +26,6 @@
         <a href="https://courses.productivedev.com" target="_blank">
           <img src="../assets/logo-sq-dark.png" width="45px" class="rofile-img">
         </a>
-
         <a href="https://github.com/wesdoyle" target="_blank">
           <img src="../assets/001-cat.png">
         </a>
