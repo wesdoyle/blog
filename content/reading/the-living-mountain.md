@@ -3,7 +3,7 @@ title: "The Living Mountain"
 slug: "the-living-mountain"
 author: "Nan Shepherd"
 tags: "nature"
-date: 2019-08-19
+date: 2021-04-11
 ---
 
 This is an absolutely beautiful reflection on the relationship between person and landscape. 
