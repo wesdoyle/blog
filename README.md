@@ -1,6 +1,6 @@
 # Blog 
 
-This is my personal blog.
+This is my personal blog.  I keep my (mostly non-software-related) reading notes here, and occassionally write technical blog posts.
 
 [https://wesdoyle.net](https://wesdoyle.net)
 
