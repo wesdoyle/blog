@@ -12,7 +12,7 @@
         human learning, and search.
       </div>
       <div class="about-section">
-        I'm the founder of <a href="http://productivedev.com" target="_blank" class="pd-link">Productive Dev</a>.
+        I'm the founder of <a href="https://courses.productivedev.com" target="_blank" class="pd-link">Productive Dev</a>.
         I enjoy writing and understanding software. I like helping other people do the same. I also enjoy reading, walking, and chess.
       </div>
     </section>
@@ -24,7 +24,7 @@
 
       <div class="subsection-group">
         <a href="https://courses.productivedev.com" target="_blank">
-          <img src="../assets/logo-sq-dark.png" width="45px" class="rofile-img">
+          <img src="../assets/logo-sq-dark.png" width="45px" class="profile-img">
         </a>
         <a href="https://github.com/wesdoyle" target="_blank">
           <img src="../assets/001-cat.png">
