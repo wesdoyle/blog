@@ -1,7 +1,7 @@
 ---
 title: "Revelations of Divine Love"
 slug: "revelation-of-divine-love"
-author: "Jimmy Soni, Rob Goodman"
+author: "Julian of Norwich"
 tags: "theology, christianity, mysticism"
 date: 2021-03-01
 ---
