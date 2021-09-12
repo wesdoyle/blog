@@ -23,8 +23,8 @@
       </section-header>
 
       <div class="subsection-group">
-        <a href="https://courses.productivedev.com" target="_blank">
-          <img src="../assets/logo-sq-dark.png" width="45px" class="profile-img">
+        <a href="https://www.youtube.com/c/wesdoyle" target="_blank">
+          <img src="../assets/youtube-logo.png">
         </a>
         <a href="https://github.com/wesdoyle" target="_blank">
           <img src="../assets/001-cat.png">
@@ -32,8 +32,8 @@
         <a href="https://stackoverflow.com/users/5278004/wes-doyle" target="_blank">
           <img src="../assets/002-overflow.png">
         </a>
-        <a href="https://www.youtube.com/c/wesdoyle" target="_blank">
-          <img src="../assets/youtube-logo.png">
+        <a href="https://courses.productivedev.com" target="_blank">
+          <img src="../assets/logo-sq-dark.png" width="45px" class="profile-img">
         </a>
       </div>
 

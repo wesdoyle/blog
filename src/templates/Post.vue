@@ -38,8 +38,8 @@ query Post ($path: String!) {
 @import "../scss/global.scss";
 
 .article {
-    margin-top: 15px;
-    margin-bottom: 128px;
+    margin: 2rem 0;
+    padding-bottom: 3rem;
     width: 80%;
   }
 

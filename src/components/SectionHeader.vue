@@ -15,7 +15,7 @@
 
   .section-header {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 1rem 2rem 1rem 0;
     background: #fbfbfb;
     display: block;

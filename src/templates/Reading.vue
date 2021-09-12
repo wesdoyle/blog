@@ -37,8 +37,10 @@ query Reading ($path: String!) {
 
 <style lang="scss">
   @import "../scss/global.scss";
-  .article {
-    margin-top: 15px;
+  .reading-item {
+    border: 2px solid gold;
+    margin: 2rem 0;
+    padding-bottom: 3rem;
   }
 
   .article-title {

@@ -57,4 +57,7 @@ query {
 </page-query>
 
 <style>
+.readings {
+  padding-bottom: 3rem;
+}
 </style>

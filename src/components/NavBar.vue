@@ -1,8 +1,8 @@
 <template>
   <div id="navContainer">
     <div class="wes highlight-container">
-      <router-link :to="{name: 'home'}" class="highlight">
-        <span class="wes-name">Wes Doyle</span>
+      <router-link :to="{name: 'home'}">
+        <span>Wes Doyle</span>
       </router-link>
     </div>
     <div class="nav-links">
@@ -46,18 +46,15 @@
     display: flex;
     align-items: center;
     height: 60px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     .wes {
-      margin-right: 2rem;
-
-      .wes-name {
-        margin-right: 2rem;
-        font-weight: bolder;
-        font-size: 2.3rem;
+      a {
+        color: #555;
       }
+      margin-right: 2rem;
 
       .blinkingCursor {
         font-family: 'Fira Code', monospace;
@@ -91,19 +88,18 @@
         height: 100%;
         flex-grow: 1;
         display: inline-block;
-        padding: 0 2.2rem;
+        padding: 0 1.2rem;
         cursor: pointer;
         align-self: flex-end;
 
         a {
           color: $dark;
           transition: 0.2s;
-          border-bottom: 4px solid $dark;
+          border-bottom: 3px solid $dark;
 
           &:hover {
-            color: $bluegreen;
             transition: 0.2s;
-            border-bottom: 4px solid $bluegreen;
+            border-bottom: 3px solid $bluegreen;
           }
         }
       }
