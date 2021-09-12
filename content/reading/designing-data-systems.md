@@ -3,7 +3,7 @@ title: "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Sc
 slug: "designing-data-systems"
 author: "Martin Kleppmann"
 tags: "distributed systems, scalability, databases"
-date: 2021-09-11"
+date: 2021-09-11
 ---
 
 An engaging high-level tour of typical problems, solutions, and the associated trade-offs that occur any system that writes, reads, updates, and deletes data. 

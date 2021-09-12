@@ -3,7 +3,7 @@ title: "Original Goodness: A Commentary on the Beatitudes"
 slug: "original-goodness"
 author: "Eknath Easwaran"
 tags: "christianity, contemplation, meditation"
-date: 2021-07-20"
+date: 2021-07-20
 ---
 
 I continue to read Eknath Easwaran, as I really enjoy his approach to communicating ideas about love and selflessness 
