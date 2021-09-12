@@ -22,7 +22,7 @@ we move closer to the Lord. In this sense, learning to love is practicing religi
 before their own small personal interests are religious, even if they would deny it. And, of course, anyone who can quote 
 scripture chapter and verse but will not put herself out for others has yet to learn what religion means."
 
-> "Most of us, as my grandmother once told me bluntly, confuse self-pity and gried.  Granny was as tough as 
+> "Most of us, as my grandmother once told me bluntly, confuse self-pity and grief.  Granny was as tough as 
 she was loving. When I would come to her crying because my feelings were hurt, she could be terribly unsympathetic. 
 'That's not grief.' she would say. 'You're just feeling sorry for yourself.'  Self-pity weakens us; grief, which means sorrow for 
 others, ennobles us and releases inner resources to help.""
