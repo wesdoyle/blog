@@ -22,8 +22,8 @@ When a test that we expect to pass passes, we consider this a knowledge claim (e
 software actually does. Given the assumptions of our test logic and the way that the system under test interacted
 with the world when the test was executed, we make an assertion about a subsequent event or outcome.
 
-More importantly, when a test that we expect to pass fails, we're revealing that there is something we don't yet know
-(or perhaps forgot to consider) about our software. In this case, something about the system under test, its environment,
+More importantly, __when a test that we expect to pass fails, we're revealing that there is something we don't yet know
+(or perhaps forgot to consider) about our software__. In this case, something about the system under test, its environment,
 or the test itself resulted in an unexpected event or outcome.
 
 In 1963, Edmund Gettier published a 3-page paper titled
@@ -31,13 +31,15 @@ In 1963, Edmund Gettier published a 3-page paper titled
 that had a profound impact on the study of epistemology.  In the paper, he challenged a widely-held definition of knowledge;
 that is, that conditions sufficient for knowledge can be expressed in the following manner:
 
-> __S__ knows that __P__ if and only if:
-> (i) __P__ is true,
-> (ii) __S__ believes that __P__, and
-> (iii) __S__ is justified in believing that __P__.
+```
+  __S__ knows that __P__ if and only if:
+  (i) __P__ is true,
+  (ii) __S__ believes that __P__, and
+  (iii) __S__ is justified in believing that __P__.
+```
 
 I would encourage you to read the paper for the two examples Gettier gives, but in short, he suggests that the notion
-of "justified true belief" is insufficient for what we would intuitively consider knowledge.  In short, there are cases
+of "justified true belief" is __insufficient for what we would intuitively consider knowledge__.  In short, there are cases
 when we have justified true beliefs as merely a _coincidence_, and in such cases, we would not intuitively accept such JTBs as knowledge.
 
 For instance, let's imagine that every evening you come home from work and are greeted by your dog, Max.
@@ -51,7 +53,7 @@ So, you might say that in this situation you have knowledge that Max is in the r
 
 However, there's a twist to the story - the dog that's running toward you is in
 fact the neighbor's new dog, who somehow found her way in.  The neighbor's dog
-looks just like Max.  Max, however, is asleep on the couch, truly in the room,=
+looks just like Max.  Max, however, is asleep on the couch, truly in the room,
 hidden under a blanket.
 
 Nothing about the conditions leading to what we just considered knowledge are
