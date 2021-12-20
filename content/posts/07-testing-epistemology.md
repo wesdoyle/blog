@@ -44,7 +44,7 @@ of "justified true belief" is __insufficient for what we would intuitively consi
 when we have justified true beliefs as merely a _coincidence_, and in such cases, we would not intuitively accept such JTBs as knowledge.
 
 For instance, let's imagine that every evening you come home from work and are greeted by your dog, Max.
-You arrive home today, and as you open the door, you see your dog Max run happily toward you.  In this situation,
+You arrive home today, and as you open the door, you see a dog that looks exactly Max run happily toward you.  In this situation,
 
 - It is true that Max is in the room
 - You believe that Max is in the room
