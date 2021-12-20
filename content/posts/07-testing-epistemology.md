@@ -24,7 +24,8 @@ with the world when the test was executed, we make an assertion about a subseque
 
 More importantly, __when a test that we expect to pass fails, we're revealing that there is something we don't yet know
 (or perhaps forgot to consider) about our software__. In this case, something about the system under test, its environment,
-or the test itself resulted in an unexpected event or outcome.
+or the test itself resulted in an unexpected event or outcome.  Despite our best efforts, I believe gaps in knoweldge about
+what our software actually does often occur due to __insufficient vetting of our knowledge claim justifications.__
 
 In 1963, Edmund Gettier published a 3-page paper titled
 "[Is Justified True Belief Knowledge?](https://web.archive.org/web/20180128081456/http://philosophyfaculty.ucsd.edu:80/faculty/rarneson/Courses/gettierphilreading.pdf)"
