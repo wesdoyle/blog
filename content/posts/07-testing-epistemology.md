@@ -9,7 +9,7 @@ We might think of a test suite as a set of knowledge claims about the behavior o
 At the level of end-to-end tests, such knowledge claims may often correspond to user stories.
 
 For a user story like "As a user, when I delete an document, I can no longer view it among my documents,"
-and a passing end-to-end test named "Give a user deletes an document, that user can no longer view it from their documents view,"
+and a passing end-to-end test named "Given a user deletes an document, that user can no longer view it from their documents view,"
 we would like to say that we know for certain the software meets the stated specification.
 
 Despite the somewhat philosophical starting point, I want to capture some thoughts about how taking this perspective on
