@@ -64,8 +64,9 @@ not have real knowledge of your claim that Max was in the room, after all.
 In a sense, you were just "lucky" that he was there.  Perhaps your justification
 was insufficient, or was based on false premises or incomplete information.
 
-For me, the Gettier problem compels us to consider our justifications more closely.
-We should look for areas where our justifications are weak and might be easily falsified.
+> For me, the Gettier problem compels us to consider our justifications closely.
+> We should look for areas where our justifications are weak and might be easily falsified.
+
 "As I enter the room, I know that Max is here, because I see a dog that looks just like him
 running toward me, as he always does - but can I possibly falsify this justification by
 searching the rest of the room?" As engineers writing tests and depending on their results,
