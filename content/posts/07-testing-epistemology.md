@@ -33,10 +33,10 @@ that had a profound impact on the study of epistemology.  In the paper, he chall
 that is, that conditions sufficient for knowledge can be expressed in the following manner:
 
 ```
-  __S__ knows that __P__ if and only if:
-    (i) __P__ is true,
-    (ii) __S__ believes that __P__, and
-    (iii) __S__ is justified in believing that __P__.
+  S knows that P if and only if:
+    (i) P is true,
+    (ii) S believes that P, and
+    (iii) S is justified in believing that P.
 ```
 
 I would encourage you to read the paper for the two examples Gettier gives, but in short, he suggests that the notion
