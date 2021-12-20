@@ -39,7 +39,7 @@ that is, that conditions sufficient for knowledge can be expressed in the follow
     (iii) S is justified in believing that P.
 ```
 
-I would encourage you to read the paper for the two examples Gettier gives, but in short, he suggests that the notion
+I would encourage you to read the paper for the two examples Gettier gives, but in short, he suggests that this notion
 of "justified true belief" is __insufficient for what we would intuitively consider knowledge__.  In short, there are cases
 when we have justified true beliefs as merely a _coincidence_, and in such cases, we would not intuitively accept such JTBs as knowledge.
 
