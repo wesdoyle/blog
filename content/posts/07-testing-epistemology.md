@@ -53,7 +53,7 @@ You arrive home today, and as you open the door, you see a dog that looks exactl
 So, you might say that in this situation you have knowledge that Max is in the room.
 
 However, there's a twist to the story - the dog that's running toward you is in
-fact the neighbor's new dog, who somehow found her way in.  The neighbor's dog
+fact the neighbor's new dog Minnie, who somehow found her way in.  The neighbor's dog
 looks just like Max.  Max, however, is asleep on the couch, truly in the room,
 hidden under a blanket.
 
