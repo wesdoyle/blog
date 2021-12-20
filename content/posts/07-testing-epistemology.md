@@ -34,9 +34,9 @@ that is, that conditions sufficient for knowledge can be expressed in the follow
 
 ```
   __S__ knows that __P__ if and only if:
-  (i) __P__ is true,
-  (ii) __S__ believes that __P__, and
-  (iii) __S__ is justified in believing that __P__.
+    (i) __P__ is true,
+    (ii) __S__ believes that __P__, and
+    (iii) __S__ is justified in believing that __P__.
 ```
 
 I would encourage you to read the paper for the two examples Gettier gives, but in short, he suggests that the notion
