@@ -37,7 +37,7 @@ query {
     siteName
     siteDescription
   }
-  allPost(filter: { date: { gte: "2020" }}) {
+  allPost(filter: { date: { gte: "2018" }}) {
     totalCount
     edges {
       node {
